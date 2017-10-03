@@ -15,7 +15,8 @@
 
 #define BUFFMAX 1024            // maximum length of a received message
 
-/* * error handling function
+/*
+ * error handling function
  */
 int error_msg(int code)
 {
