@@ -15,8 +15,7 @@
 
 #define BUFFMAX 1024            // maximum length of a received message
 
-/* 
- * error handling function
+/* * error handling function
  */
 int error_msg(int code)
 {
@@ -161,6 +160,7 @@ int communicate(int clientsocket)
     receive_message(clientsocket, response, BUFFMAX);
     printf("%s\n", response);
 
+    // get user input and send to server
     printf("Enter message: ");
     get_user_input(message, BUFFMAX);
     send_message(clientsocket, message, sizeof(message));
